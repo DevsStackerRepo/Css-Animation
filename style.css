@@ -1,0 +1,149 @@
+/*body*/
+body {
+  background-color: skyblue;
+}
+
+/* h1 */
+h1 {
+  text-align: center;
+  font-family: arial;
+}
+
+/* left */
+.left {
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
+/* right */
+.right {
+  position: absolute;
+  top: -14px;
+  right: 0;
+}
+
+/* cercle */
+.cercle {
+  border-radius: 50%;
+  background: linear-gradient(35deg, #ccffff, #ffcccc);
+  width: 98px;
+  height: 85px;
+  animation: bounce 3.5s infinite;
+}
+
+.ray_box {
+  position: absolute;
+  margin: auto;
+  top: 300px;
+  left: 0;
+  right: 0;
+  width: 70px;
+  -webkit-animation: ray_anim 50s linear infinte;
+  animation: ray_anim 50s linear infinite;
+}
+
+.ray {
+  background: linear-gradient(35deg, #ccffff, #ffcccc);
+  margin-left: 10px;
+  border-radius: 80% 80% 0 0 ;
+  position: absolute;
+  opacity: 0.2;
+}
+
+.ray1 {
+  height: 250px;
+  width: 50px;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+  top: -195px;
+  left: 5px;
+}
+
+.ray2 {
+  height: 250px;
+  width: 50px;
+  -webkit-transform: rotate(220deg);
+  transform: rotate(220deg);
+  top: -150px;
+  left: 75px;
+}
+
+.ray3 {
+  height: 250px;
+  width: 50px;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  top: -90px;
+  left: 100px;
+}
+
+.ray4 {
+  height: 250px;
+  width: 50px;
+  -webkit-transform: rotate(305deg);
+  transform: rotate(305deg);
+  top: -10px;
+  left: 100px;
+}
+
+.ray5 {
+  height: 250px;
+  width: 50px;
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  top: 70px;
+  left: 20px;
+}
+
+.ray6 {
+  height: 250px;
+  width: 50px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  top: 30px;
+  left: -80px;
+}
+
+.ray7 {
+  height: 250px;
+  width: 50px;
+  -webkit-transform: rotate(70deg);
+  transform: rotate(70deg); 
+   top: -35px;
+  left: -120px;
+}
+
+.ray8 {
+  height: 250px;
+  width: 50px;
+  -webkit-transform: rotate(100deg);
+  transform: rotate(100deg); 
+  top: -95px;
+  left: -150px;
+}
+
+@keyframes ray_anim {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    /* position: absolute; */
+    transform: translateY(30px);
+    /* top: 30px; */
+  }
+  100% {
+    transform: translateY(0);
+    /* position: absolute; */
+    /* top: 0px; */
+  }
+}
